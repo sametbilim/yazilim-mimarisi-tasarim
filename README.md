@@ -87,3 +87,12 @@ static void Main(string[] args)
     fcd.KrediKullan(new Musteri { Ad = "Burak", TcNo = "123303", MusteriNumarasi = 4234242 },1000) ;
  }
 ```
+## Factory Tasarım Deseni
+Factory Method tasarım kalıbı , kalıtımsal ilişkileri olan asıl nesnelerin üretilmesi amacıyla kullanılan patternlerden birisidir. Burada asıl olan bir metottur. Bu metodun üstlendiği iş ise istemcinin ihtiyacı olan asıl ürünlerin üretilmesini sağlamak.
+![Image of Class](https://github.com/sametbilim/yazilim-mimarisi-tasarim/blob/master/factory.png)
+
+Fabrika metodunun özelliği istemciden gelen talebe göre uygun olan ürünün üretilip istemciye verilmesi. Tek bir sınıf ve metodun bunu üstlenebilmesi için polimorfik özelliği olan bir tipe ihtiyacımız vardır. Bu yüzden productların interface olarak bir atası tasarlanır. Yani bizim creatorClassımız bir productu yani IProduct’ın taşıyabilceği türden bir referansı geriye döndürecektir.
+
+
+
+
